@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- TODO: Include Font Awesome file here -->
+    <script
+      src="https://kit.fontawesome.com/105f2a602f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- TODO: Include Google Fonts file here -->
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link rel="stylesheet" href="./styles//font.css" />
+
+    <script src="./scripts/index.js" defer></script>
+
+    <title>blogSite</title>
+  </head>
+
+  <body>
+    <!-- TODO: Include all your code for the header and home page here -->
+
+    <!-- header -->
+    <div class="header">
+      <div>
+        <p id="pageTitle" class="logo-title">ScriBBler</p>
+        <p class="middleText">Explore, Imagine, Create</p>
+      </div>
+      <div>
+        <button
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#signInModal"
+        >
+          Sign In
+        </button>
+        <button
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#signUpModal"
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div class="body">
+      <div>
+        <a href="./html/bloglist.html"
+          ><button class="btn btn-warning">All Post</button></a
+        >
+        <button
+          class="btn btn-warning"
+          data-toggle="modal"
+          data-target="#createPost"
+        >
+          Create Post
+        </button>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="signInModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Welcome Back !</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="signInForm">
+              <label for="uname1">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="uname1"
+                placeholder="Enter Username"
+                required
+              />
+              <br />
+              <label for="pwd1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pwd1"
+                placeholder="Enter Password"
+                required
+              />
+              <br />
+              <button class="btn btn-success btn-block" id="signInBtn">
+                Sign In
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div>
+              Not a member ?
+              <span
+                id="signUpLink"
+                data-toggle="modal"
+                data-target="#signUpModal"
+                data-dismiss="modal"
+                >Sign Up</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="signUpModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Get Started</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="nm">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nm"
+                placeholder="Enter Full Name"
+                required
+              />
+              <br />
+              <label for="uname">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="uname"
+                placeholder="Enter Username"
+                required
+              />
+              <br />
+              <label for="pwd">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pwd"
+                placeholder="Enter Password"
+                required
+              />
+              <br />
+              <label for="cpwd">Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="cpwd"
+                placeholder="Confirm Password"
+                required
+              />
+              <br />
+              <button
+                type="submit"
+                class="btn btn-success btn-block"
+                id="signUpBtn"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="createPost">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Pen Your Post</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="title">TITLE</label>
+              <input type="text" class="form-control" id="title" required />
+              <br />
+              <label for="content">CONTENT</label>
+              <textarea
+                class="form-control"
+                id="content"
+                rows="10"
+                required
+              ></textarea>
+              <br />
+              <button class="btn btn-success" id="createBtn">Create</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

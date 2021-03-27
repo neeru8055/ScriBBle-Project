@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo-title {
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
+  color: #112fb4;
+  margin: auto;
+  text-decoration: none;
+  margin: 10px 10px 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+}
+
+.middleText {
+  font-family: "Marck Script", cursive;
+  margin: 0 0 0 10px;
+}
+#pageTitle:hover {
+  cursor: pointer;
+}
+
+.container h4 {
+  text-align: center;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-pink {
+  background-color: hotpink;
+  color: white;
+}
+
+.btn-pink:hover {
+  color: white;
+}
+
+p {
+  margin: 0;
+}
+
+.second {
+  height: fit-content;
+}
+
+.second {
+  text-align: left;
+}
+
+.fa-edit,
+.fa-thumbs-up {
+  font-size: 14px;
+}
+
+#comment {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+}
+
+#seeComments {
+  padding: 1rem;
+  background-color: lightgrey;
+}
+
+.content {
+  padding: 1rem;
+  border: 1px solid black;
+  outline: none;
+}
+#signUpLink {
+  color: blue;
+}
+
+#signUpLink:hover {
+  cursor: pointer;
+}
+.modal-footer {
+  margin: auto;
+}
